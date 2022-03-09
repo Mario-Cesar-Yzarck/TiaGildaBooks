@@ -31,10 +31,10 @@ btnSearch.addEventListener('click', e => {
     e.preventDefault();
     let html = ""     
     for(let i = 0; i < arrayBooks.length; i++) {
-        if(arrayBooks[i].title === searchTitle.value || arrayBooks[i].author === searchAuthor.value || arrayBooks[i].code === searchCode.value) {
+        if(arrayBooks[i].title === searchTitle.value || arrayBooks[i].author === searchAuthor.value || arrayBooks[i].code === searchCode.value) {            
             html += `<ul><li>Título: ${arrayBooks[i].title}</li>`
             html += `<li>Autor: ${arrayBooks[i].author}</li>`
-            html += `<li>Código: ${arrayBooks[i].code}</li></ul>`
+            html += `<li>Código: ${arrayBooks[i].code}</li></ul><br>`
         }
     }
     let listaBooks = document.getElementById('info')
