@@ -38,5 +38,5 @@ btnSearch.addEventListener('click', e => {
         }
     }
     let listaBooks = document.getElementById('info')
-    listaBooks.innerHTML = html    
+    listaBooks.innerHTML = html
 })
