@@ -23,7 +23,7 @@ btnSubmit.addEventListener('click', e => {
         objBook.code = bookCode.value
         arrayBooks.push(objBook)
        
-        //alert('Livro Cadastrado com Sucesso!!')
+        alert('Livro Cadastrado com Sucesso!!')
     }
 })
 
