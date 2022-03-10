@@ -25,6 +25,9 @@ btnSubmit.addEventListener('click', e => {
        
         alert('Livro Cadastrado com Sucesso!!')
     }
+    title.value = "";
+    author.value = "";
+    bookCode.value = "";
 })
 
 btnSearch.addEventListener('click', e => {
@@ -35,8 +38,13 @@ btnSearch.addEventListener('click', e => {
             html += `<ul><li>Título: ${arrayBooks[i].title}</li>`
             html += `<li>Autor: ${arrayBooks[i].author}</li>`
             html += `<li>Código: ${arrayBooks[i].code}</li></ul><br>`
+        } else {
+            alert('Informações não encontradas.')
         }
     }
     let listaBooks = document.getElementById('info')
     listaBooks.innerHTML = html
+    searchTitle.value = "";
+    searchAuthor.value = "";
+    searchCode.value = "";
 })
