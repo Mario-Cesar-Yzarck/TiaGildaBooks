@@ -15,8 +15,25 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 
+
+
 getDocs(collection(db, "books"))
     .then( querySnapshot => {
-       querySnapshot.docs.forEach(doc => console.log(doc.data()))        
+        
+        const book = querySnapshot.docs.reduce((acc, doc) => {
+            const { title, author, code } = doc.data()
+            console.log(title)
+            acc += `<ul>
+            <li>Título: ${title}</li>
+            <li>Autor: ${author}</li>
+            <li>Código: ${code}</li></ul>`
+
+            return acc;
+        }, '')
+        
+        const listBooks = document.querySelector('#info');
+        listBooks.innerHTML = book;
     })
-    .catch(console.log())
+    .catch(console.log()
+)
+
