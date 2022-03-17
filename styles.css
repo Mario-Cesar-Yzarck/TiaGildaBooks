@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url('https://comumaxicaradecafe.com.br/wp-content/uploads/2021/03/livros-para-ler-com-cafe-780x496.png');
+    background-image: url('https://thumbs.dreamstime.com/b/livros-antigos-1670025.jpg');
     background-size: cover;
     padding-bottom: 100px;
 }
@@ -46,15 +46,15 @@ header {
     margin-left: 41%;
     margin-top: 20px;
     font-size: large;
-    text-shadow: 0.1em 0.1em 0.3em black;    
+    text-shadow: 0.1em 0.1em 0.3em rgb(255, 255, 255);    
     align-items: center;
     justify-content: center;
 }
 
 footer {
     text-align: center;    
-    color: white;
-    text-shadow: 0.1em 0.1em 0.3em black;  
+    color: rgb(0, 0, 0);
+    text-shadow: 0.1em 0.1em 0.3em rgb(255, 255, 255);  
     position: fixed;
     bottom: 0;
     margin-left: 25%;
