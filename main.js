@@ -26,9 +26,7 @@ const bookCode = document.getElementById('bookCode')
 const searchTitle = document.getElementById('searchTitle')
 const searchAuthor = document.getElementById('searchAuthor')
 const searchCode = document.getElementById('searchCode')
-let arrayBooks = []
-
-
+let counter = 0
 
 btnSubmit.addEventListener('click', e => {
     e.preventDefault();
@@ -38,8 +36,12 @@ btnSubmit.addEventListener('click', e => {
         author: author.value,
         code: bookCode.value,
     })
-    .then(doc => console.log('Doc com ID:', doc.id))
+    .then(doc => alert('Livro Cadastrado com Sucesso!!'))
     .catch(console.log())
+    
+     title.value = ''
+     author.value = ''
+     bookCode.value = ''
     
     /*
     let objBook = {
@@ -66,23 +68,63 @@ btnSearch.addEventListener('click', e => {
 
     getDocs(collectionBooks)
     .then( querySnapshot => {
-        
+        querySnapshot.docs.forEach(doc => {
+            const {title, author, code } = doc.data()   
+            
+            let someTitle = title.toUpperCase() === searchTitle.value.toUpperCase();
+            let someAuthor = author.toUpperCase() === searchAuthor.value.toUpperCase();
+            let someCode = code.toUpperCase() === searchCode.value.toUpperCase();
+            let html = ''              
+            
+            if(someTitle || someAuthor || someCode) {
+                
+                html += `<ul>
+                <li>Título: ${title}</li>
+                <li>Autor: ${author}</li>
+                <li>Código: ${code}</li>
+                </ul>`            
+            }           
+
+            const listBooks = document.querySelector('#info');
+            listBooks.innerHTML += html;
+
+            counter += 1
+            console.log(querySnapshot.docs.length === counter)
+            if(querySnapshot.docs) {
+                searchAuthor.value = '';
+                searchCode.value = '';
+                searchTitle.value = '';
+            }       
+        })
+         /*
         const book = querySnapshot.docs.reduce((acc, doc) => {
             const { title, author, code } = doc.data()
-           
-            acc += `<ul>
-            <li>Título: ${title}</li>
-            <li>Autor: ${author}</li>
-            <li>Código: ${code}</li></ul>`
-
-            return acc;
+            let someTitle = title.toUpperCase() === searchTitle.value.toUpperCase();
+            let someAuthor = author.toUpperCase() === searchAuthor.value.toUpperCase();
+            let someCode = code.toUpperCase() === searchCode.value.toUpperCase();
+              
+            if(someTitle || someAuthor || someCode) {
+                acc = `<ul>
+                <li>Título: ${title}</li>
+                <li>Autor: ${author}</li>
+                <li>Código: ${code}</li>
+                </ul>`
+                
+                return acc;            
+            }                   
         }, '')
-        
+
         const listBooks = document.querySelector('#info');
         listBooks.innerHTML = book;
+        searchAuthor.value = ''
+        searchCode.value = ''
+        searchTitle.value = ''
+        */
+        
+        
     })
-    .catch(console.log()
-    )
+    .catch(console.log())
+    
 /*
     let html = ""     
     for(let i = 0; i < arrayBooks.length; i++) {
