@@ -1,7 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
 import { getFirestore, collection, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js";
 
-
 const firebaseConfig = {
     apiKey: "AIzaSyBO6Te1V2jm-JU5NZ8V4af4pkZkuq36m4I",
     authDomain: "node-demo-a4591.firebaseapp.com",
@@ -15,6 +14,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 const collectionBooks = collection(db, "books")
+const collectionUsers = collection(db, "users")
 
 const btnSubmit = document.getElementById('btnSubmit')
 const btnSearch = document.getElementById('btnSearch')
@@ -79,15 +79,26 @@ btnSearch.addEventListener('click', e => {
     .catch(console.log())  
 })
 
-const password = 1234;
-const passwordField = document.getElementById('password')
-const btnLogin = document.getElementById('login')
+const nicknameField = document.getElementById('nickname');
+const passwordField = document.getElementById('password');
+const btnLogin = document.getElementById('login');
 
 btnLogin.addEventListener('click', e => { 
-    e.preventDefault()       
-    if(passwordField.value == password) {
-        btnSubmit.disabled = false
-    }
-}) 
+    e.preventDefault()   
+    
+    getDocs(collectionUsers)
+    .then( querySnapshot => {
+        querySnapshot.docs.forEach(doc => {
+            const {nickname, password} = doc.data()
 
-
+            if(nicknameField.value == nickname) {               
+                if(passwordField.value == password) {
+                    btnSubmit.disabled = false
+                }
+            }
+        })
+        nicknameField.value = '';
+        passwordField.value = '';
+    })  
+    .catch(console.log())      
+})
