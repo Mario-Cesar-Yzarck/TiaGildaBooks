@@ -30,7 +30,8 @@ const searchCode = document.getElementById('searchCode')
 btnSubmit.addEventListener('click', e => {
     e.preventDefault();
     
-    addDoc(collectionBooks, {
+    if(title.value && author.value && bookCode.value) {
+        addDoc(collectionBooks, {
         title: title.value,
         author: author.value,
         code: bookCode.value,
@@ -40,7 +41,11 @@ btnSubmit.addEventListener('click', e => {
     
      title.value = ''
      author.value = ''
-     bookCode.value = ''   
+     bookCode.value = ''  
+    } else {
+        alert('Preencha todos os campos com informações corretas.')
+    }
+     
     
 })
 
@@ -74,7 +79,6 @@ btnSearch.addEventListener('click', e => {
         searchTitle.value = '';
     })
     .catch(console.log())  
-
 })
 
 
