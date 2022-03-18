@@ -37,15 +37,13 @@ btnSubmit.addEventListener('click', e => {
         code: bookCode.value,
     })
     .then(doc => alert('Livro Cadastrado com Sucesso!!'))
-    .catch(console.log())
-    
-     title.value = ''
-     author.value = ''
-     bookCode.value = ''  
+    .catch(console.log())    
     } else {
         alert('Preencha todos os campos com informações corretas.')
     }
-     
+    title.value = ''
+    author.value = ''
+    bookCode.value = ''  
     
 })
 
@@ -80,5 +78,16 @@ btnSearch.addEventListener('click', e => {
     })
     .catch(console.log())  
 })
+
+const password = 1234;
+const passwordField = document.getElementById('password')
+const btnLogin = document.getElementById('login')
+
+btnLogin.addEventListener('click', e => { 
+    e.preventDefault()       
+    if(passwordField.value == password) {
+        btnSubmit.disabled = false
+    }
+}) 
 
 
