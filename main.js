@@ -30,12 +30,12 @@ const searchCode = document.getElementById('searchCode')
 const btnBackToTop = document.getElementById('btnBackToTop')
 
 btnBackToTop.addEventListener('click', e => {
+    e.preventDefault()
     window.scrollTo(0, 0);
-})
+});
 
 btnSubmit.addEventListener('click', e => {
-    e.preventDefault();
-    
+    e.preventDefault();    
     if(title.value && author.value && bookCode.value) {
         addDoc(collectionBooks, {
         title: title.value,
