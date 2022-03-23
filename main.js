@@ -27,6 +27,12 @@ const searchTitle = document.getElementById('searchTitle')
 const searchAuthor = document.getElementById('searchAuthor')
 const searchCode = document.getElementById('searchCode')
 
+const btnBackToTop = document.getElementById('btnBackToTop')
+
+btnBackToTop.addEventListener('click', e => {
+    window.scrollTo(0, 0);
+})
+
 btnSubmit.addEventListener('click', e => {
     e.preventDefault();
     

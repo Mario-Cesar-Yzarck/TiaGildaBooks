@@ -8,36 +8,95 @@
     <title>Tia Gilda Book's</title>
 </head>
 <body>
-    <nav>
-        <header class="header"><h1>Tia Gilda Book's</h1></header>
+    <nav class="nav">
+        <header class="header" id="#home"><img src="\assets\logo.png" alt="" id="logo"></header>
         <ul class="menu">
             <li><a href="#">Admin</a></li>
             <li><a href="#">Livros</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
-      </ul>
-      </nav>
-      <br>
-      <br>
+        </ul>
+    </nav>
+      
+    <br>
+    <br>
+    <h1 class="title">Indicação de Livros da Semana!</h1>
+    <div class="container-indication">
+        <img src="https://diariodegoias.com.br/wp-content/uploads/2016/09/livro-got.jpg" alt="" class="indication" id="img-indication">        
+        <p class="indication">Para esta semana indicamos o livro: Game of Thrones!</p>
+    </div> 
+  
+    <br>
+    <h1 class="title">Serviços de Qualidade!</h1>
+    <div class="container-services">        
+        <div class="services">
+            <img src="https://cdn2.iconfinder.com/data/icons/modern-future-technology-2/128/devices-laptop-tablet-phone2-512.png" alt="" class="img-icon">
+            <br>
+            <p><strong>Acessível!</strong></p>
+            <br>
+            <p>Acessível em qualquer dispositivo sempre que precisar!</p>
+            <br>
+        </div>
+        <div class="services">
+            <img src="https://cdn4.iconfinder.com/data/icons/student-degree-in-arts-and-humanities/96/university-courses-02-004-512.png" alt="" class="img-icon">
+            <br>
+            <p><strong>Versatilidade!</strong></p>
+            <br>
+            <p>Disponibilidade de contato e reserva de livros!</p>
+            <br>
+        </div>
+        <div class="services">
+            <img src="https://cdn1.iconfinder.com/data/icons/furniture-241/100/shelves-512.png" alt="" class="img-icon">
+            <br>
+            <p><strong>Muitas opções!</strong></p>
+            <br>
+            <p>Grande variedade de acervo! Contamos com mais de 3000 livros!</p>
+            <br>
+        </div>        
+    </div>
     
-    <h1>Indicação de Livros da Semana!</h1>
-    <p>Aparece o banner de 1 a 3 livros a cada semana</p>
     <br>
     <br>
-    <h1>Qualidades e Serviços!</h1>
-    <p>Três icones contendo um título e breve descrição.</p>
-    <p>Ex: Grande Variedade de Acervo - Contamos com mais de 1000 livros sobre diversos temas em nosso acervo.</p>
-    <p>Ex: Garanta sua reserva: Utilize esta página para fazer a reserva do livro que desejar.</p>
+  
+    <h1 class="title">Reserva de Livros!</h1>
+    <div class="container-reservation">   
+        <div class="text-reservation reservation">
+            <br>
+            <p >Faça aqui sua reserva de livos. Para fazer a reserva você vai precisar do Código do livro, que pode ser encontrado ao pesquisar sobre o mesmo no menu Livros, seu login e senha, que devem ser cadastrados no menu Login e clicar no botão <strong>Reservar</strong>.</p> 
+            <p>Lembrando que o livro escolhido ficará reservado por até 48 horas.</p>   
+            <br>
+        </div>              
+        <div class="reservation">
+            <br>
+            <input type="text" placeholder="Digite aqui o código do livro" class="input-reservation">
+            <input type="text" placeholder="Digite aqui seu Login" class="input-reservation">
+            <input type="text" placeholder="Digite aqui sua Senha" class="input-reservation">
+            <button>Reservar</button>
+        </div>        
+        <img src="https://images.unsplash.com/photo-1567168544230-d5a9401299a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="img-reservation" class="reservation">        
+    </div>   
+        
     <br>
-    <br>
-    <h1>Reserva de Livros!</h1>
-    <p>Aqui é onde faz a reserva, com um botão explicando alguns detalhes como: quantidade de livros que podem ser reservados por vez, quanto tempo dura a reserva e outras coisas. Além de exigir login e senha para fazer a reserva.</p>
-    <br>
-    <br>
-    <h1>Contato!</h1>
-    <p>e-mail, telefone, endereço e outras informações que quiser.</p>
-
+    <h1 class="title">Contato!</h1>
+    <div class="contact">
+        <h2 class="submit-message contact-children">Envie sua mensagem.</h2>
+        <div class="message contact-children">            
+            <input type="email" placeholder="E-mail">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            <button>Enviar</button>
+        </div>
+        <div class="adress contact-children">
+            <p><strong>Endereço:</strong> Rua José da Cruz s/nº, Centro, Ecoporanga - ES. CEP: 29850-000</p>
+            <p><strong>Telefone:</strong> (27) 3755-1671</p>
+            <p><strong>Horário de atendimento:</strong> segunda a quinta - 8h às 22h; sexta - 8h às 17h; sábado - 8h às 12h</p>
+            <p><strong>Coordenadora:</strong> Gilda de Castro Cunha</p>
+            <p><strong>Contato:</strong> gildacunha44@gmail.com</p>
+        </div> 
+    </div>
+    <button id="btnBackToTop">Voltar ao topo!</button>
+        
+ <!--
     <div>
         <a href="link-register.html">Cadastrar novo usuário!</a> 
         <div>
@@ -72,7 +131,7 @@
         <h2 id="titleInfo">Informações encontradas:</h2>
         <div id="info"></div>
     </div>
-    <!--    
+       
     <footer>
         <h3>POLO ECOPORANGA</h3>
         <p>Endereço: Rua José da Cruz s/nº, Centro, Ecoporanga - ES. CEP: 29850-000, Telefone: (27) 3755-1671</p>
