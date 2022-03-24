@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register-Users</title>
+    <title>Login de usuário</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         * {
             margin: 0;
         }
-        .container {
-            background-image: url('https://paisefilhos.uol.com.br/wp-content/uploads/2019/06/importancia-dos-livros-para-a-crianca.jpg');
+        .container {            
             position: relative;
             height: 100vh;
             width: 100vw;
@@ -21,15 +21,31 @@
 </head>
 <body>
     <div class="container">
-       <header><h1>Cadastro de usuários</h1></header>
+       <header><h1>Login de usuários</h1></header>
+       <br>       
     <div>
-        <label for="">Apelido</label>
+        <p>Olá! Caso ainda não seja cadastrado preencha os campos Login, Senha e E-mail abaixo e clique em Registrar.</p>
+        <label for="">Login</label>
         <input type="text" id="nickname">
         <label for="">Senha</label>
-        <input type="text" id="password"    >
+        <input type="text" id="password">
+        <label for="">E-mail</label>
+        <input type="email">
         <button id="register">Registrar</button>
     </div>  
-    <a href="index.html">Retornar à página principal.</a>
+    <br>  
+    <!--
+    <div>
+        <p>Se você já realizou seu cadastro preencha os campos Login e Senha abaixo e clique em Entrar.</p>
+        <label for="">Login</label>
+        <input type="text" id="nicknameEnter">
+        <label for="">Senha</label>
+        <input type="text" id="passwordEnter"    >
+        <button id="register">Entrar</button>
+    </div>
+    -->
+    <br>
+    <button><a href="index.html">Retornar à página principal.</a></button>
     <footer></footer>   
     <script src="register.js" type="module"></script> 
     </div>    

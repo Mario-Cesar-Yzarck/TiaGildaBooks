@@ -23,32 +23,17 @@ const password = document.getElementById('password');
 btnRegister.addEventListener('click', e => {
     e.preventDefault();
     
-    if(nickname.value && password.value) {
-        getDocs(collectionUsers)
-        .then( querySnapshot => { 
-            querySnapshot.docs.forEach( doc =>
-                {
-                    const {nickname} = doc.data()
-                    console.log(nickname == nicknameHtml.value)
-
-                    if(nickname != nicknameHtml.value) {                        
-                        addDoc(collectionUsers, {
-                            nickname: nickname.value,
-                            password: password.value,
-                        })          
-                        .then(doc => {
-                            return alert('Usuário cadastrado com sucesso!')                        
-                        })
-                        .catch(console.log())
-                    }                    
-                }
-            )  
+    if(nicknameHtml.value && password.value) {
+        addDoc(collectionUsers, {
+            nickname: nicknameHtml.value,
+            password: password.value,
+        })          
+        .then(doc => {
+            return alert('Usuário cadastrado com sucesso!')                        
         })
+        .catch(console.log())
     } else {
         alert('Preencha corretamente os campos de Apelido e Senha.')
     }
     
 })
-
-function compareNicknames() { 
-    }

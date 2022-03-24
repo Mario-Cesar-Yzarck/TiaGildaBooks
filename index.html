@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">    
     <title>Tia Gilda Book's</title>
 </head>
 <body>
     <nav class="nav">
         <header class="header" id="#home"><img src="https://live.staticflickr.com/65535/51957311900_eab83fb632_b.jpg" alt="" id="logo"></header>
         <ul class="menu">
-            <li><a href="#">Admin</a></li>
-            <li><a href="#">Livros</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="admin-page.html">Admin</a></li>
+            <li><a href="search-page.html">Livros</a></li>
+            <li><a href="link-register.html">Login</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
         </ul>
     </nav>
-      
+  
     <br>
     <br>
-    <h1 class="title">Indicação de Livros da Semana!</h1>
+    <h1 class="title" style="background-color: #c0c0c0; color: black;">Indicação de Livros da Semana!</h1>
     <div class="container-indication">
         <img src="https://diariodegoias.com.br/wp-content/uploads/2016/09/livro-got.jpg" alt="" class="indication" id="img-indication">        
         <p class="indication">Para esta semana indicamos o livro: Game of Thrones!</p>
@@ -59,7 +59,7 @@
     <br>
     <br>
   
-    <h1 class="title">Reserva de Livros!</h1>
+    <h1 class="title" style="background-color: #c0c0c0; color: black;">Reserva de Livros!</h1>
     <div class="container-reservation">   
         <div class="text-reservation reservation">
             <br>
@@ -75,68 +75,38 @@
             <button>Reservar</button>
         </div>        
         <img src="https://images.unsplash.com/photo-1567168544230-d5a9401299a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="img-reservation" class="reservation">        
-    </div>   
+    </div>  
+    <br>
+    <h1 class="title" id="about">Sobre nós!</h1>
+    <div class="about">
+        <p class="p-about">A biblioteca do Polo Universitário de Ecoporanga foi inaugurada na data de 28 de dezembro de 2004, tendo recebido uma grande quantidade de livros doados pela Biblioteca da UFES e da Biblioteca Estadual.</p>
+        <p class="p-about">O foco da biblioteca, inicialmente, era voltado para atendimento dos alunos matriculados em algum curso do Polo, mas atualmente qualquer pessoa pode emprestar livros da biblioteca.</p>
+        <p class="p-about">O acervo conta com várias obras voltadas para conhecimentos técnico/científicos disponíveis aos alunos para auxiliar em suas formações acadêmicas, tendo a própria origem da biblioteca embasada na distribuição destes conhecimentos. Porém, alguns exemplares de livros de literatura podem ser encontrados.</p>
+        <p class="p-about">A biblioteca está sempre disponível para atender a todos que precisarem. <strong>Venha fazer uma visita!</strong</p>
+    </div> 
         
     <br>
-    <h1 class="title">Contato!</h1>
+    <h1 class="title" id="contact" style="background-color: #c0c0c0; color: black;">Contato!</h1>
     <div class="contact">
         <h2 class="submit-message contact-children">Envie sua mensagem.</h2>
         <div class="message contact-children">            
-            <input type="email" placeholder="E-mail">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            <input type="email" placeholder="Digite aqui seu e-mail">
+            <textarea name="" id="" cols="30" rows="10" placeholder=" Digite aqui sua mensagem."></textarea>
             <button>Enviar</button>
         </div>
         <div class="adress contact-children">
             <p><strong>Endereço:</strong> Rua José da Cruz s/nº, Centro, Ecoporanga - ES. CEP: 29850-000</p>
             <p><strong>Telefone:</strong> (27) 3755-1671</p>
-            <p><strong>Horário de atendimento:</strong> segunda a quinta - 8h às 22h; sexta - 8h às 17h; sábado - 8h às 12h</p>
+            <p><strong>Horário de atendimento:</strong> segunda a sexta de 8h às 17h</p>
             <p><strong>Coordenadora:</strong> Gilda de Castro Cunha</p>
             <p><strong>Contato:</strong> gildacunha44@gmail.com</p>
         </div> 
     </div>
-    <button id="btnBackToTop">Voltar ao topo!</button>
+
+    <button id="btnBackToTop">Voltar ao topo!</button>     
+    <!--
+    <footer>       
         
- 
-    <div>
-        <a href="link-register.html">Cadastrar novo usuário!</a> 
-        <div>
-            <input type="text" id="nickname" placeholder="Digite se apelido aqui.">
-            <input type="password" id="password" placeholder="Digite sua senha aqui.">
-            <button id="login">  Entrar  </button>
-        </div>
-    </div>
-    <div class="main">        
-        <div class="submit">
-            <label for="">Título do Livro</label>
-            <input id="title" type="text">
-            <label for="">Autor</label>
-            <input id="author" type="text">
-            <label for="">Código do Livro</label>
-            <input id="bookCode" type="text">
-            <br>
-            <button id="btnSubmit" disabled>Cadastrar</button>            
-        </div>
-        <div class="search">
-            <label for="">Título do Livro</label>
-            <input id="searchTitle" type="text">
-            <label for="">Autor</label>
-            <input id="searchAuthor" type="text">
-            <label for="">Código do Livro</label>
-            <input id="searchCode" type="text">
-            <br>
-            <button id="btnSearch">Perquisar</button>
-        </div>    
-    </div>
-    <div>
-        <h2 id="titleInfo">Informações encontradas:</h2>
-        <div id="info"></div>
-    </div>
-       <!--
-    <footer>
-        <h3>POLO ECOPORANGA</h3>
-        <p>Endereço: Rua José da Cruz s/nº, Centro, Ecoporanga - ES. CEP: 29850-000, Telefone: (27) 3755-1671</p>
-        <p>Horário de atendimento: segunda a quinta - 8h às 22h; sexta - 8h às 17h; sábado - 8h às 12h</p>
-        <p>Coordenador(a): Vanete Gregório Batista Souza, Contato: vanetegregorio13@hotmail.com / gregoriovanete@gmail.com </p>
     </footer>    
     -->
     <script src="main.js" type="module"></script>

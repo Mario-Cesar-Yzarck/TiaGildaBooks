@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">    
+    <title>Página do Administrador</title>
+</head>
+<body>
+    <h1>Registro de novos livros.</h1>
+    <p>Página de login dos administradores destinada ao registro de novos livros.</p>
+    <div>
+        <input type="text" id="nickname" placeholder="Digite se apelido aqui.">
+        <input type="password" id="password" placeholder="Digite sua senha aqui.">
+        <button id="login">  Entrar  </button>
+    </div>    
+    <div class="main">        
+        <div class="submit">
+            <label for="">Título do Livro</label>
+            <input id="title" type="text">
+            <label for="">Autor</label>
+            <input id="author" type="text">
+            <label for="">Código do Livro</label>
+            <input id="bookCode" type="text">
+            <br>
+            <button id="btnSubmit" disabled>Cadastrar</button>            
+        </div>
+           
+    </div>
+    
+    <button><a href="index.html">Retornar à página principal.</a></button>
+    <script src="admin-page.js" type="module"></script>
+</body>
+</html>
