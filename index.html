@@ -3,117 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">    
-    <title>Tia Gilda Book's</title>
-</head>
-<body>
-    <nav class="nav">
-        <header class="header" id="#home"><img src="https://live.staticflickr.com/65535/51957311900_eab83fb632_b.jpg" alt="" id="logo"></header>
-        <ul class="menu">
-            <li><a href="admin-page.html">Admin</a></li>
-            <li><a href="search-page.html">Livros</a></li>
-            <li><a href="link-register.html">Login</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-    </nav>
-  
-    <br>
-    <br>
-    <h1 class="title" style="background-color: #c0c0c0; color: black;">Indicação de Livros da Semana!</h1>
-    <div class="container-indication">
-        <img src="https://diariodegoias.com.br/wp-content/uploads/2016/09/livro-got.jpg" alt="" class="indication" id="img-indication">        
-        <p class="indication">Para esta semana indicamos o livro: Game of Thrones!</p>
-    </div> 
-  
-    <br>
-    <h1 class="title">Serviços de Qualidade!</h1>
-    <div class="container-services">        
-        <div class="services">
-            <img src="https://cdn2.iconfinder.com/data/icons/modern-future-technology-2/128/devices-laptop-tablet-phone2-512.png" alt="" class="img-icon">
-            <br>
-            <p><strong>Acessível!</strong></p>
-            <br>
-            <p>Acessível em qualquer dispositivo sempre que precisar!</p>
-            <br>
-        </div>
-        <div class="services">
-            <img src="https://cdn4.iconfinder.com/data/icons/student-degree-in-arts-and-humanities/96/university-courses-02-004-512.png" alt="" class="img-icon">
-            <br>
-            <p><strong>Versatilidade!</strong></p>
-            <br>
-            <p>Disponibilidade de contato e reserva de livros!</p>
-            <br>
-        </div>
-        <div class="services">
-            <img src="https://cdn1.iconfinder.com/data/icons/furniture-241/100/shelves-512.png" alt="" class="img-icon">
-            <br>
-            <p><strong>Muitas opções!</strong></p>
-            <br>
-            <p>Grande variedade de acervo! Contamos com mais de 3000 livros!</p>
-            <br>
-        </div>        
-    </div>
-    
-    <br>
-    <br>
-  
-    <h1 class="title" style="background-color: #c0c0c0; color: black;">Reserva de Livros!</h1>
-    <div class="container-reservation">   
-        <div class="text-reservation reservation">
-            <br>
-            <p >Faça aqui sua reserva de livros. Para fazer a reserva você vai precisar do Código do livro, que pode ser encontrado ao pesquisar sobre o mesmo no menu Livros, seu login e senha, que devem ser cadastrados no menu Login e clicar no botão <strong>Reservar</strong>.</p> 
-            <p>Lembrando que o livro escolhido ficará reservado por até 48 horas, para alunos do Polo Universitário podem ser realizadas até 05 reservas simultâneas e para demais usuários da biblioteca até 02 reservas.</p>   
-            <br>
-        </div>              
-        <div class="reservation">
-            <br>
-            <input type="text" placeholder="Digite aqui o código do livro" class="input-reservation">
-            <input type="text" placeholder="Digite aqui seu Login" class="input-reservation">
-            <input type="text" placeholder="Digite aqui sua Senha" class="input-reservation">
-            <button>Reservar</button>
-        </div>        
-        <img src="https://images.unsplash.com/photo-1567168544230-d5a9401299a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" id="img-reservation" class="reservation">        
-    </div>  
-    <br>
-    <h1 class="title" id="about">Sobre nós!</h1>
-    <div class="about">
-        <p class="p-about">A biblioteca do Polo Universitário de Ecoporanga foi inaugurada na data de 28 de dezembro de 2004, tendo recebido uma grande quantidade de livros doados pela Biblioteca da UFES e da Biblioteca Estadual.</p>
-        <p class="p-about">O foco da biblioteca, inicialmente, era voltado para atendimento dos alunos matriculados em algum curso do Polo, mas atualmente qualquer pessoa pode emprestar livros da biblioteca.</p>
-        <p class="p-about">O acervo conta com várias obras voltadas para conhecimentos técnico/científicos disponíveis aos alunos para auxiliar em suas formações acadêmicas, tendo a própria origem da biblioteca embasada na distribuição destes conhecimentos. Porém, alguns exemplares de livros de literatura podem ser encontrados.</p>
-        <p class="p-about">A biblioteca está sempre disponível para atender a todos que precisarem. <strong>Venha fazer uma visita!</strong</p>
-    </div> 
-        
-    <br>
-    <h1 class="title" id="contact" style="background-color: #c0c0c0; color: black;">Contato!</h1>
-    <div class="contact">
-        <h2 class="submit-message contact-children">Envie sua mensagem.</h2>        
-        <div class="message contact-children">            
-            <form action="https://formsubmit.co/bibliotestjs@gmail.com" method="POST">                
-                <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Entraremos em contato assim que possível.">
-                <input type="hidden" name="_next" value="https://mario-cesar-yzarck.github.io/TiaGildaBooks/submit-email.html">
-                <input type="text" name="name" placeholder="Nome">
-                <input type="email" name="email" placeholder="E-mail">
-                <textarea name="message" id="" cols="30" rows="10" placeholder=" Digite aqui sua mensagem."></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <div class="adress contact-children">
-            <p><strong>Endereço:</strong> Rua José da Cruz s/nº, Centro, Ecoporanga - ES. CEP: 29850-000</p>
-            <p><strong>Telefone:</strong> (27) 3755-1671</p>
-            <p><strong>Horário de atendimento:</strong> segunda a sexta de 8h às 17h</p>
-            <p><strong>Coordenadora da biblioteca:</strong> Gilda de Castro Cunha</p>
-            <p><strong>Contato:</strong> gildacunha44@gmail.com</p>
-        </div> 
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 
-    <button id="btnBackToTop">Voltar ao topo!</button>     
-    <!--
-    <footer>       
-        
-    </footer>    
+    <title>Biblioteca do Polo UAB</title>
+    <!--Font-->  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--Bootstrap e CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+
+    <!-- bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/0b165d48f8.js" crossorigin="anonymous"></script>
+
+    <!--Progress Bar-->
+    <script src="progress-bar-min.js"></script>
+    
+    <!--Parallax
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     -->
+</head>
+
+<body>   
+    <header id="home">
+        <nav class="container-fluid" id="nav-container">
+            <div class="navbar navbar-expand-lg fixed-top navbar-dark" role="navigation">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="assets/logo.jpg" alt="Logo Biclioteca do polo uab">Biblioteca do Polo UAB
+                </a>                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Especialidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reservation">Livros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin-page.html">Administrador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>                
+                <div class="carousel-inner">
+                    <div class="carousel-item   active">
+                        <img src="assets/harry-potter.png" class="d-block w-100" alt="Capa livro game of thrones">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Indicações de livros da semana!</h2>
+                            <p>Toda semana três livros incríveis a sua disposição.</p>
+                            <a href="#" class="main-btn">Ver informações.</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/eragon.png" class="d-block w-100" alt="Capa livro o pequeno principe">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Indicações de livros da semana!</h2>
+                            <p>Toda semana três livros incríveis a sua disposição.</p>
+                            <a href="#" class="main-btn">Ver informações.</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/laura.png" class="d-block w-100" alt="Capa livro leonardo boff">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Indicações de livros da semana!</h2>
+                            <p>Toda semana três livros incríveis a sua disposição.</p>
+                            <a href="#" class="main-btn">Ver informações.</a>
+                        </div>
+                    </div>
+                </div> 
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>                      
+            </div>
+            <!--Sobre-->
+            <div id="about">
+                <div class="container">
+                    <!--a divisão abaixo foi utilizando a ideia do grid do bootstrap em 12 colunas-->
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Sobre a Biblioteca</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="assets/biblioteca.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">Uma biblioteca do Polo para você!</h3>
+                            <p>A biblioteca do Polo Universitário de Ecoporanga foi inaugurada na data de 28 de dezembro de 2004, tendo recebido uma grande quantidade de livros doados pela Biblioteca da UFES e da Biblioteca Estadual.</p>
+                            <p>O foco da biblioteca, inicialmente, era voltado para atendimento dos alunos matriculados em algum curso do Polo, mas atualmente qualquer pessoa pode emprestar livros da biblioteca.</p>
+                            <p>O acervo conta com várias obras voltadas para conhecimentos técnico/científicos disponíveis aos alunos para auxiliar em suas formações acadêmicas, tendo a própria origem da biblioteca embasada na distribuição destes conhecimentos. Porém, alguns exemplares de livros de literatura podem ser encontrados.</p>
+                            <p>A biblioteca está sempre disponível para atender a todos que precisarem. <strong>Venha fazer uma visita!</strong</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i>Reserva de livros pelo site!</li>
+                                <li><i class="fas fa-check"></i>Comunicação direta com responsáveis!</li>
+                                <li><i class="fas fa-check"></i>Consulta ao acervo agilizada!</li>
+                                <li><i class="fas fa-check"></i>Ambiente agradável e grande variedade de livros!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Serviços-->
+            <div id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossas especialidades</h3>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Acessível</h4>
+                            <p>Acessível em qualquer dispositivo sempre que precisar!</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>Versatilidade!</h4>
+                            <p>Disponibilidade de contato e reserva de livros!</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-book"></i>
+                            <h4>Muitas opções!</h4>
+                            <p>Grande variedade de acervo! Contamos com mais de 3000 livros!</p>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            <!--Reserva-->
+            <div id="reservation">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Reserva de livros</h3>
+                        </div> 
+                        <div class="col-md-6 apply-box" id="company-img">
+                            <h4>Encontre o livro que está precisando!</h4>
+                            <p>Clique no botão abaixo para acessar a página de pesquisa.</p>
+                            <p>Após encontrar o livro desejado anote o Código caso queira deixá-lo reservado.</p>
+                            <a href="search-page.html" class="main-btn" id="apply-btn" style="color:#444">Clique aqui!</a>
+                        </div>
+                        <div class="col-md-6 apply-box" id="pattern-img">
+                            <h4>Reserve aqui os livros que desejar!</h4>
+                            <p>Para fazer a reserva você vai precisar do Código do livro, que pode ser encontrado ao pesquisar sobre o mesmo no menu Livros, seu login e senha, que devem ser cadastrados no menu Login e clicar no botão abaixo.</p> 
+                            <p>Lembrando que o livro escolhido ficará reservado por até 48 horas. Para alunos do Polo Universitário podem ser realizadas até 05 reservas simultâneas e para demais usuários da biblioteca até 02 reservas.</p>         
+                            <input type="text" placeholder="Código do livro" class="input-reservation">
+                            <input type="text" placeholder="Login" class="input-reservation">
+                            <input type="text" placeholder="Senha" class="input-reservation">
+                            <a href="#" class="main-btn" id="apply-btn">Clique aqui!</a>                  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!--Rodapé-->
+    <footer>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-title">Ligue para:</span> (27)3755-1671</p>
+                        <p><span class="contact-title">Horários:</span> Segunda a sexta de 8h às 17h</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-title">Envie um e-mail:</span> gildacunha44@gmail.com</p>                        
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-title">Venha tomar um café:</span> Rua José da Cruz s/nº, Centro, Ecoporanga - ES. CEP: 29850-000</p>                        
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <p>Ou nos deixe uma mensagem:</p>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="https://formsubmit.co/bibliotestjs@gmail.com" method="POST" class="message">
+                            <input type="text" class="form-control" placeholder="Nome" name="name">
+                            <input type="email" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea name="message" rows="3" class="form-control" placeholder="Sua mensagem..."></textarea>
+                            <input type="submit" class="main-btn" value="Enviar">
+                            <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Entraremos em contato assim que possível.">
+                            <input type="hidden" name="_next" value="https://mario-cesar-yzarck.github.io/TiaGildaBooks/submit-email.html">
+                        </form>                        
+                    </div>
+                </div>         
+            </div>
+        </div> 
+
+        <a href="#home" class="back-top main-btn" alt="Voltar ao topo." title="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>        
+                      
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a id="copy" href="https://github.com/Mario-Cesar-Yzarck" target="_blank"><b>Mário-Yzarck-Cesar</b></a> &copy; 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
     <script src="main.js" type="module"></script>
 </body>
 </html>

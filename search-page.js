@@ -17,8 +17,6 @@ const collectionBooks = collection(db, "books")
 const btnSearch = document.getElementById('btnSearch')
 const searchTitle = document.getElementById('searchTitle')
 const searchAuthor = document.getElementById('searchAuthor')
-const searchCode = document.getElementById('searchCode')
-
 
 btnSearch.addEventListener('click', e => {
     e.preventDefault();    
@@ -32,21 +30,20 @@ btnSearch.addEventListener('click', e => {
             let html = ''
 
             let someTitle = title.toUpperCase() === searchTitle.value.toUpperCase();
-            let someAuthor = author.toUpperCase() === searchAuthor.value.toUpperCase();
-            let someCode = code.toUpperCase() === searchCode.value.toUpperCase();                          
+            let someAuthor = author.toUpperCase() === searchAuthor.value.toUpperCase();                                      
             
-            if(someTitle || someAuthor || someCode) {                
-                html += `<ul>
-                <li>Título: ${title}</li>
-                <li>Autor: ${author}</li>
-                <li>Código: ${code} <button>Copiar</button></li>
-                </ul>`            
+            if(someTitle || someAuthor) {                
+                html += `<ul id='about-list'>
+                <li class='li-search'><i class="fas fa-check"></i>Título: ${title}</li>
+                <li class='li-search'><i class="fas fa-check"></i>Autor: ${author}</li>
+                <li class='li-search'><i class="fas fa-check"></i>Código: ${code}</li>
+                </ul>
+                <button class='main-btn' id='btnCopyCode'>Copiar código</button>`            
             }   
 
             listBooks.innerHTML += html;            
         })               
-        searchAuthor.value = '';
-        searchCode.value = '';
+        searchAuthor.value = '';        
         searchTitle.value = '';
     })
     .catch(console.log())  
