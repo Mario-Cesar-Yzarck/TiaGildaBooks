@@ -255,12 +255,12 @@ footer {
 
 #contact {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .contact-box {
     padding-bottom: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border-bottom: 1px solid #3EC1D5;
 }
 
@@ -376,8 +376,13 @@ footer {
 }
 
 .admin-box p {
+    margin-top: 20px;
     font-size: 16px;
     font-weight: bold;
+}
+
+#form-login-admin {
+    margin-top: 23px;
 }
 
 #btnSubmit, #login-btn {
