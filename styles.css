@@ -436,9 +436,11 @@ footer {
 }
 
 .search-main input[type="text"] {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;;
+    margin-top: 20px;
 }
 
 #btnSearch {

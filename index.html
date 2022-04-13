@@ -184,10 +184,13 @@
                             <h4>Reserve aqui os livros que desejar!</h4>
                             <p>Para fazer a reserva você vai precisar do Código do livro, que pode ser encontrado ao pesquisar sobre o mesmo no menu Livros, seu login e senha, que devem ser cadastrados no menu Login e clicar no botão abaixo.</p> 
                             <p>Lembrando que o livro escolhido ficará reservado por até 48 horas. Para alunos do Polo Universitário podem ser realizadas até 05 reservas simultâneas e para demais usuários da biblioteca até 02 reservas.</p>         
-                            <input type="text" placeholder="Código do livro" class="input-reservation">
-                            <input type="text" placeholder="Login" class="input-reservation">
-                            <input type="text" placeholder="Senha" class="input-reservation">
-                            <a href="#" class="main-btn" id="apply-btn">Clique aqui!</a>                  
+                            <form action="https://formsubmit.co/bibliotestjs@gmail.com" method="POST" class="message">
+                                <input type="text" class="input-reservation" placeholder="Código do Livro" name="subject">
+                                <input type="text" class="input-reservation" placeholder="Seu Nome" name="name">
+                                <input type="submit" class="main-btn" id="apply-btn" value="Clique aqui!">                                
+                                <input type="hidden" name="_next" value="https://mario-cesar-yzarck.github.io/TiaGildaBooks/submit-reservation.html">
+                            </form> 
+                                          
                         </div>  
                     </div>
                 </div>
