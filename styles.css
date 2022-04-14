@@ -49,22 +49,25 @@ header, .navbar {
 
 
 /*Slider*/
+#title-carousel {
+    padding-top: 8%;
+}
 
 .container-fluid {
-    padding: 0;
+    padding: 0;    
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: 90vh;
+    height: 70vh;
 }
 
 #mainSlider .carousel-caption {
-    top: 30%;
+    top: 20%;
 }
 
 #mainSlider .carousel-caption h2 {
     font-size: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-shadow: -1px 0 black, 0 1px black,
       1px 0 black, 0 -1px black 
 }
@@ -478,6 +481,10 @@ footer {
     /* geral */
     .container {
         padding: 20px 0;
+    }
+
+    .container-fluid #title-carousel h3 {
+       margin-top: 1000px;
     }
 
     /* slider */

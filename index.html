@@ -18,18 +18,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     <!--Scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+   
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/0b165d48f8.js" crossorigin="anonymous"></script>
 
-    <!--Progress Bar-->
+    <!--Progress Bar
     <script src="progress-bar-min.js"></script>
-    
+    -->
     <!--Parallax
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     -->
@@ -37,8 +33,8 @@
 
 <body>   
     <header id="home">
-        <nav class="container-fluid" id="nav-container">
-            <div class="navbar navbar-expand-lg fixed-top navbar-dark" role="navigation">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <div class="container-fluid" id="nav-container">
                 <a href="#" class="navbar-brand">
                     <img id="logo" src="assets/logo.jpg" alt="Logo Biclioteca do polo uab">Biblioteca do Polo UAB
                 </a>                
@@ -74,6 +70,9 @@
     </header>
     <main>
         <div class="container-fluid">
+            <div class="col-12" id="title-carousel">
+                <h3 class="main-title">Indicações de livros da semana!</h3>
+            </div>
             <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -82,28 +81,23 @@
                 </div>                
                 <div class="carousel-inner">
                     <div class="carousel-item   active">
-                        <img src="assets/harry-potter.png" class="d-block w-100" alt="Capa livro game of thrones">
-                        <div class="carousel-caption d-none d-md-block">
+                        <img src="assets/capa5.jpg" class="d-block w-100" alt="Capa livro game of thrones">
+                        <!--
+                            <div class="carousel-caption d-none d-md-block">
                             <h2>Indicações de livros da semana!</h2>
                             <p>Toda semana três livros incríveis a sua disposição.</p>
-                            <a href="#" class="main-btn">Ver informações.</a>
+                            <a href="search-page.html" class="main-btn">Ver informações.</a>
                         </div>
+                        -->
+                        
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/eragon.png" class="d-block w-100" alt="Capa livro o pequeno principe">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Indicações de livros da semana!</h2>
-                            <p>Toda semana três livros incríveis a sua disposição.</p>
-                            <a href="#" class="main-btn">Ver informações.</a>
-                        </div>
+                        <img src="assets/capa2.jpg" class="d-block w-100" alt="Capa livro o pequeno principe">
+                        
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/laura.png" class="d-block w-100" alt="Capa livro leonardo boff">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h2>Indicações de livros da semana!</h2>
-                            <p>Toda semana três livros incríveis a sua disposição.</p>
-                            <a href="#" class="main-btn">Ver informações.</a>
-                        </div>
+                        <img src="assets/capa3.jpg" class="d-block w-100" alt="Capa livro leonardo boff">
+                        
                     </div>
                 </div> 
                 <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
