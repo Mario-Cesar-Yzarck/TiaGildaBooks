@@ -1,0 +1,69 @@
+/* 
+@media(max-widht: 768px) {
+    geral */
+
+
+header, .navbar {
+    background-color: #353041;    
+}
+
+.container {
+    padding: 20px 0;
+}
+
+.container-fluid #title-carousel h3 {
+    padding-top: 40px;
+}
+
+/* slider */
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: auto;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 28px;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.carousel-caption {
+    left: 10%;
+    right: 10%;
+}
+
+/*about*/
+#about {
+    padding-top: 85px;
+}
+
+#about img {
+    margin-top: 150px;
+}
+
+/*services*/
+#services {
+    padding-top: 85px;
+}
+
+
+/*reservation*/
+#company-img {
+    background-image: url(https://images.unsplash.com/photo-1567168544230-d5a9401299a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover; 
+    height: 550px;      
+}
+    
+#pattern-img {
+    background-image: url(assets/pattern.png);
+    background-size: cover;  
+    height: 550px;      
+}
+
+/*contact*/
+#contact {
+    margin-top: 200px;
+    padding: 85px;
+}

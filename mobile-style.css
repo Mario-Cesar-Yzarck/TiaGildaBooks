@@ -1,0 +1,72 @@
+
+header, .navbar {
+    background-color: #353041;    
+}
+
+.main-title {
+    font-size: 28px;
+}
+
+.container {
+    padding: 20px 0;
+}
+
+.container-fluid #title-carousel h3 {
+    padding-top: 100px;    
+}
+
+/* slider */
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: auto;
+}
+
+.carousel-caption {
+    left: 10%;
+    right: 10%;
+}
+
+/*about*/
+#about {
+    padding-top: 110px;
+}
+
+#about .main-title {
+    margin-bottom: 0;
+}
+
+#about #img-about .img-fluid{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*services*/
+#services {
+    padding-top: 110px;
+}
+
+
+/*reservation*/
+#company-img {
+    background-image: url(https://images.unsplash.com/photo-1567168544230-d5a9401299a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    height: 420px; 
+}
+
+#company-img h4 {
+    margin-top: 0;
+}
+    
+#pattern-img {
+    background-image: url(assets/pattern.png);
+    background-size: cover;  
+    height: 600px;      
+}
+
+#pattern-img h4 {
+    margin-top: 0;
+}
+
+/*contact*/
+#contact {
+    padding: 110px 0 0 0;
+    margin-top: 600px;
+}
