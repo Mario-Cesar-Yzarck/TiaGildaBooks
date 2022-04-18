@@ -6,5 +6,3 @@ if(btnBackToTop) {
         window.scrollTo(0, 0);
     });  
 }
-
-
