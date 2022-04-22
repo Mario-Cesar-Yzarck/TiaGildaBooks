@@ -47,7 +47,7 @@ header, .navbar {
     padding: 1rem .8rem;
 }
 
-#navbar a:hover {
+#navbar a:hover, #nav-container a:hover {
     color: rgb(61, 198, 240);
 }
 
@@ -263,6 +263,10 @@ footer {
 #contact {
     text-align: center;
     padding-top: 60px;
+}
+
+#contact2 {
+    padding-top: 90px;
 }
 
 .contact-box {
