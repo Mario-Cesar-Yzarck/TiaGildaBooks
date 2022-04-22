@@ -7,6 +7,10 @@ header, .navbar {
     background-color: #353041;    
 }
 
+#logo {
+    width: 60px;
+}
+
 .container {
     padding: 20px 0;
 }
