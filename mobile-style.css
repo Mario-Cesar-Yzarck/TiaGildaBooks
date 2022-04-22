@@ -20,7 +20,7 @@ header, .navbar {
 }
 
 .container-fluid #title-carousel h3 {
-    padding-top: 100px;    
+    padding-top: 75px;    
 }
 
 /* slider */
@@ -35,7 +35,7 @@ header, .navbar {
 
 /*about*/
 #about {
-    padding-top: 110px;
+    padding-top: 75px;
 }
 
 #about .main-title {
@@ -49,7 +49,7 @@ header, .navbar {
 
 /*services*/
 #services {
-    padding-top: 110px;
+    padding-top: 75px;
 }
 
 /*reservation*/
@@ -75,6 +75,10 @@ header, .navbar {
 
 /*contact*/
 #contact {
-    padding: 110px 0 0 0;
+    padding: 100px 0 0 0;
     margin-top: 600px;
+}
+
+#contact2 {
+    padding: 75px 0 0 0;
 }

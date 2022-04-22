@@ -47,6 +47,10 @@ header, .navbar {
     padding: 1rem .8rem;
 }
 
+#navbar a:hover {
+    color: rgb(61, 198, 240);
+}
+
 
 /*Slider*/
 #title-carousel {

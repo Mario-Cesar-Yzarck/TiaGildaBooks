@@ -35,13 +35,13 @@
 
 <body>   
     <header id="home">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
             <div class="container-fluid" id="nav-container">
                 <a href="#" class="navbar-brand" id="logo-name">
                     <img id="logo" src="assets/logo.jpg" alt="Logo Biclioteca do polo uab">Biblioteca do Polo UAB
                 </a>                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="bi bi-list"></i>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
@@ -50,7 +50,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">Sobre</a>
+                            <a class="nav-link" href="#about">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Especialidades</a>
@@ -65,10 +65,9 @@
                             <a class="nav-link" href="admin-page.html">Administrador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contato</a>
+                            <a class="nav-link" href="#contact2" id="nav-link">Contato</a>
                         </li>
-                    </ul>
-                    
+                    </ul>                    
                 </div>
             </div>
         </nav>
@@ -200,7 +199,7 @@
     <!--Rodapé-->
     <footer>
         <div id="contact">
-            <div class="container">
+            <div class="container" id="contact2">
                 <div class="row">
                     <div class="col-md-12">
                         <h3 class="main-title">Entre em contato conosco</h3>
