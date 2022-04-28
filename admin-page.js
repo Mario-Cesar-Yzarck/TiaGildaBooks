@@ -63,8 +63,10 @@ btnLogin.addEventListener('click', e => {
                 if(passwordField.value == password) {
                     alert('Login realizado com sucesso.')
                     ableToRegisterBooks = true;
+                } else {
+                    alert('Password incorretos.')
                 }
-            }
+            } 
         })
         nicknameField.value = '';
         passwordField.value = '';

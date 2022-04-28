@@ -16,9 +16,10 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 const collectionUsers = collection(db, "users")
 
-const btnRegister = document.getElementById('register');
+const btnRegister = document.getElementById('btnRegister');
 const nicknameHtml = document.getElementById('nickname');
 const password = document.getElementById('password');
+const email = document.getElementById('email')
 
 btnRegister.addEventListener('click', e => {
     e.preventDefault();
@@ -29,7 +30,11 @@ btnRegister.addEventListener('click', e => {
             password: password.value,
         })          
         .then(doc => {
-            return alert('Usuário cadastrado com sucesso!')                        
+            alert('Usuário cadastrado com sucesso!')
+            nicknameHtml.value = ''
+            password.value = ''
+            email.value = ''
+            return                         
         })
         .catch(console.log())
     } else {
