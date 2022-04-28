@@ -47,7 +47,7 @@ header, .navbar {
     padding: 1rem .8rem;
 }
 
-#navbar a:hover {
+#navbar a:hover, #nav-container a:hover {
     color: rgb(61, 198, 240);
 }
 
@@ -265,6 +265,10 @@ footer {
     padding-top: 60px;
 }
 
+#contact2 {
+    padding-top: 90px;
+}
+
 .contact-box {
     padding-bottom: 50px;
     margin-bottom: 30px;
@@ -480,12 +484,46 @@ footer {
     font-weight: bold;
 }
 
-/* responsive */
+/* register page */
+
+.register-box {
+    padding: 15px;
+    text-align: center; 
+    justify-content: center; 
+}
+
+.register-box p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 
+#form-login-admin {
+    margin-top: 23px;
+}
+
+#btnSubmit, #login-btn {
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+}
 
 
+#btnSubmit:hover, #login-btn:hover, .back-home:hover {
+    color: #65DAF9;
 
+}  
 
+.admin-box input[type="text"], .admin-box input[type="password"]{
+    padding: 10px;
+    margin-top: 10px;
+}
 
+*/
+#img-register {
+    width: 100%;
+}
 
 
 
