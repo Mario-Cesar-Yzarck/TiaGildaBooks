@@ -17,11 +17,11 @@ const collectionBooks = collection(db, "books")
 const btnSearch = document.getElementById('btnSearch')
 const searchTitle = document.getElementById('searchTitle')
 const searchAuthor = document.getElementById('searchAuthor')
-let copyCode = '';
+
 
 btnSearch.addEventListener('click', e => {
     e.preventDefault();    
-    const listBooks = document.querySelector('#info');
+    const listBooks = document.querySelector('#infos');
     listBooks.innerHTML = ''
 
     getDocs(collectionBooks)
@@ -29,9 +29,7 @@ btnSearch.addEventListener('click', e => {
         querySnapshot.docs.forEach(doc => {
             const {title, author, code } = doc.data()   
             let html = ''
-
-            copyCode = code
-
+            
             let someTitle = title.toUpperCase() === searchTitle.value.toUpperCase();
             let someAuthor = author.toUpperCase() === searchAuthor.value.toUpperCase();                                      
             
@@ -40,8 +38,7 @@ btnSearch.addEventListener('click', e => {
                 <li class='li-search'><i class="fas fa-check"></i>Título: ${title}</li>
                 <li class='li-search'><i class="fas fa-check"></i>Autor: ${author}</li>
                 <li class='li-search'><i class="fas fa-check"></i>Código: ${code}</li>
-                </ul>
-                <button class='main-btn' onclick='copyTextCode()' id='btnCopyCode'>Copiar código</button>`            
+                </ul>`            
             }   
 
             listBooks.innerHTML += html;            
@@ -51,11 +48,3 @@ btnSearch.addEventListener('click', e => {
     })
     .catch(console.log())  
 })
-
-function copyTextCode() {
-    let textCopy = copyCode;
-    textCopy.select();
-    textCopy.setSelectionRange(0, 99999);
-    document.execCommand('copy');
-    alert('O código é: ' + textCopy.value)
-}

@@ -11,6 +11,10 @@ header, .navbar {
     width: 55px;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: .8rem 2rem;
+}
+
 .container {
     padding: 20px 0;
 }

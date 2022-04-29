@@ -31,7 +31,10 @@ const btnLogin = document.getElementById('login-btn');
 btnSubmit.addEventListener('click', e => {
     e.preventDefault(); 
     if(ableToRegisterBooks == false) {
-        alert('Faça login de administrador para registrar novos livros.')              
+        title.value = ''
+        author.value = ''
+        bookCode.value = '' 
+        alert('Faça login de administrador para registrar novos livros.')
     } else {
         if(title.value && author.value && bookCode.value) {
             addDoc(collectionBooks, {
@@ -64,7 +67,7 @@ btnLogin.addEventListener('click', e => {
                     alert('Login realizado com sucesso.')
                     ableToRegisterBooks = true;
                 } else {
-                    alert('Password incorretos.')
+                    alert('Password incorreto.')
                 }
             } 
         })

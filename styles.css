@@ -41,16 +41,21 @@ header, .navbar {
 
 #navbar-links a {
     color: #FFF;
+    text-decoration: underline 0.15em #353041;
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 1rem .8rem;
+    padding: .6rem 1rem;
 }
 
-#navbar a:hover, #nav-container a:hover {
-    color: rgb(61, 198, 240);
+#navbar-links a:hover {
+    color: #65DAF9;
+    text-decoration-color: #65DAF9;
+    text-underline-offset: 0.4em;
+  
 }
-
 
 /*Slider*/
 #title-carousel {
