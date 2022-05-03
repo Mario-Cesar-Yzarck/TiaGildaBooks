@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
 import { getFirestore, collection, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js";
-
+import { getAuth, signInWithPopup, GoogleAuthProvider } from 'https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js'
 
 const firebaseConfig = {
     apiKey: "AIzaSyBO6Te1V2jm-JU5NZ8V4af4pkZkuq36m4I",
@@ -15,30 +15,25 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app)
 const collectionUsers = collection(db, "users")
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
 
 const btnRegister = document.getElementById('btnRegister');
 const nicknameHtml = document.getElementById('nickname');
 const password = document.getElementById('password');
 const email = document.getElementById('email')
 
-btnRegister.addEventListener('click', e => {
-    e.preventDefault();
-    
-    if(nicknameHtml.value && password.value) {
-        addDoc(collectionUsers, {
-            nickname: nicknameHtml.value,
-            password: password.value,
-        })          
-        .then(doc => {
-            alert('Usuário cadastrado com sucesso!')
-            nicknameHtml.value = ''
-            password.value = ''
-            email.value = ''
-            return                         
-        })
-        .catch(console.log())
-    } else {
-        alert('Preencha corretamente os campos de Apelido e Senha.')
+signInWithPopup(auth, provider)
+    .then(console.log)
+    .catch(error => console.log('error:', error))
+
+const login = async () => {   
+    try {
+        const result = await signInWithPopup(auth, provider)
+        console.log(result)       
+    } catch (error) {
+        console.log('error:', error)
     }
-    
-})
+}
+
+btnRegister.addEventListener('click', login)
